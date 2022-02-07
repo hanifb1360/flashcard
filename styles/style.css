@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+* body {
+  background-color: #FCF3CF;
+  color: #545454;
+  padding: 5vh;
+}
+
+* body .header h2 {
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+* body .header .inputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 10vh;
+  margin-top: 5vh;
+}
+
+* body .header .inputContainer .inputBox {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* body .header .inputContainer .inputBox .input {
+  border-color: gray;
+  border: solid 1px;
+  height: 5vh;
+  border-radius: 7px;
+}
+
+* body main {
+  margin-top: 5vh;
+  height: 100vh;
+}
+
+* body main h3 {
+  font-weight: 500;
+}
+
+* body main .flashcardBox {
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10vh;
+}
+
+* body main .flashcardBox .flashcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #476e88;
+  width: 40%;
+  height: 40vh;
+  padding: 4vh;
+  padding: 5vh;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10vh;
+  color: #fff;
+}
+
+* body main .flashcardBox .flashcard .flashCardTitle {
+  font-weight: 400;
+}
+
+* body main .flashcardBox .flashcard .infoBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10vh;
+}
+
+* body main .flashcardBox .flashcard .infoBox .flashCardButton {
+  padding: 10px 30px;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */

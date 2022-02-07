@@ -1,0 +1,97 @@
+
+$bg-color: #FCF3CF;
+$dark-grey: rgb(84, 84, 84);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+
+    body{
+        background-color: $bg-color;
+        color: $dark-grey;
+        padding: 5vh;
+
+        .header{
+            h2 {
+                letter-spacing: 2px;
+                font-weight: 500;
+            }
+        .inputContainer{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 10vh;
+            margin-top: 5vh;
+
+            .inputBox {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                
+
+                .input {
+                    border-color: gray;
+                    border: solid 1px ;
+                    height: 5vh;
+                    border-radius: 7px;
+                     
+                }
+            }
+        }
+    }
+    main{
+        margin-top: 5vh;
+        height: 100vh;
+        
+        h3 {
+            font-weight: 500;
+        }
+
+        .flashcardBox {
+            margin-top: 5vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10vh;
+
+            .flashcard {
+                display: flex;
+                background-color: rgb(71, 110, 136);
+                width: 40%;
+                height: 40vh;
+                padding: 4vh;
+                padding: 5vh;
+                display: flex;
+                flex-direction: column;
+                gap: 10vh;
+                color: #fff;
+                
+                    
+
+                    .flashCardTitle {
+                        font-weight: 400;
+                        
+                    }
+                    .infoBox{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 10vh;
+
+                        .flashCardButton {
+                            padding: 10px 30px;
+                            border: none;
+                            
+                        }
+                    
+                }
+                
+            }
+
+        }
+    }
+}
+}

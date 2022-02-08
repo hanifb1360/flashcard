@@ -21,3 +21,4 @@ sparaBtn.addEventListener('click', () => {
 
   localStorage.setItem('flashcards', JSON.stringify(flashcardArray))
 })
+

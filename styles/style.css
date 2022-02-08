@@ -109,4 +109,8 @@
   padding: 10px 30px;
   border: none;
 }
+
+.hidden {
+  display: none !important;
+}
 /*# sourceMappingURL=style.css.map */

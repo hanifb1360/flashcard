@@ -3,7 +3,7 @@ const flashcardContainer = document.querySelector("#flashcardContainer");
 const framsidaInput = document.querySelector('#framsidaInput')
 const baksidaInput = document.querySelector('#baksidaInput')
 const sparaBtn = document.querySelector('#sparaBtn')
-
+flashcardContainer.classList.add("flashcardBox");
 let flashcardArray = [];
 const storedCards = JSON.parse(localStorage.getItem("flashcards"));
 if (storedCards) {
@@ -13,6 +13,7 @@ if (storedCards) {
 const displayLocalStorage = () => {
   const flashcards = JSON.parse(localStorage.getItem("flashcards"));
   flashcards.forEach((flashcard) => {
+
     const newCard = document.createElement("div");
     const cardTitle = document.createElement("h5");
     const cardFront = document.createElement("div");
@@ -27,7 +28,7 @@ const displayLocalStorage = () => {
     cardBtn.innerText = "Flip";
     deleteBtn.innerText = "Delete Card";
 
-    flashcardContainer.classList.add("flashcardBox");
+    
     newCard.classList.add("flashcard");
     cardTitle.classList.add("flashCardTitle");
     cardFront.classList.add("infoBox");

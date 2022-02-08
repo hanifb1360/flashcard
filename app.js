@@ -18,12 +18,14 @@ const displayLocalStorage = () => {
     const cardFront = document.createElement("div");
     const cardBack = document.createElement("div");
     const cardBtn = document.createElement("button");
+    const deleteBtn = document.createElement("button");
     cardBtn.classList.add("flip-btn");
 
     cardTitle.innerText = "Framsida";
     cardFront.innerText = flashcard.framsida;
     cardBack.innerText = flashcard.baksida;
     cardBtn.innerText = "Flip";
+    deleteBtn.innerText = "Delete Card";
 
     flashcardContainer.classList.add("flashcardBox");
     newCard.classList.add("flashcard");
@@ -36,11 +38,26 @@ const displayLocalStorage = () => {
     newCard.appendChild(cardFront);
     newCard.appendChild(cardBack);
     newCard.appendChild(cardBtn);
+    newCard.appendChild(deleteBtn);
     flashcardContainer.appendChild(newCard);
 
     let flipButtons = document.querySelectorAll(".flip-btn");
 
     let frontOpen = true;
+
+    deleteBtn.addEventListener('click', (x)=> {
+      let parent = x.target.parentElement;
+      console.log(parent.children[1][0])
+    
+      parent.remove()
+      let index = flashcardArray.findIndex(object =>{
+        return object.framsida == parent.children[1].innerText
+      })
+      
+      console.log(index)
+      flashcardArray.splice(index,1)
+      localStorage.setItem('flashcards', JSON.stringify(flashcardArray))
+    })
 
     flipButtons.forEach((btn) => {
       btn.addEventListener("click", (x)=>{
@@ -91,3 +108,4 @@ sparaBtn.addEventListener('click', (x) => {
 
 
 displayLocalStorage();
+console.log(flashcardArray)
